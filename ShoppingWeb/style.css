@@ -1,0 +1,545 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6; /* สีพื้นหลัง */
+    color: #333; /* สีตัวอักษร */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffcccb; /* สีพาสเทล */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #ff8c00; /* สีพาสเทล */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.right-section a {
+    margin-left: 20px;
+    color: #333;
+}
+
+/* Menu */
+.menu {
+    background-color: #ffe4e1; /* สีพาสเทล */
+    display: flex;
+    padding: 10px 20px;
+}
+
+.menu a {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff9e9e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Product List */
+.product-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    border-radius: 10px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    margin-top: 10px;
+}
+
+.add-to-cart button {
+    background-color: #ffb6c1; /* สีพาสเทล */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.view-details {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff69b4; /* สีพาสเทล */
+    text-decoration: none;
+}
+
+.view-details:hover {
+    text-decoration: underline;
+}
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #ffffff; /* สีพื้นหลังของรายละเอียดสินค้า */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image img {
+    width: 300px; /* กำหนดความกว้างของรูปภาพ */
+    height: 300px; /* กำหนดความสูงของรูปภาพ */
+    object-fit: cover; /* ปรับให้ภาพไม่ถูกบิดเบือน */
+    border-radius: 10px;
+}
+
+.product-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.price, .stock {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-buttons-item {
+    margin-top: 20px;
+}
+
+.product-buttons-item button {
+    background-color: #ffb6c1; /* สีพาสเทล */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-buttons-item button:hover {
+    background-color: #ff69b4; /* สีเข้มขึ้นเมื่อ hover */
+}
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #fcabb7; /* สีพื้นหลังของปุ่ม dropdown */
+    color: #ffffff; /* สีข้อความ */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* เงา */
+    margin: 0 5px;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #ff8f9f; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none; /* ซ่อนเนื้อหาโดยเริ่มต้น */
+    position: absolute;
+    background-color: #ffb6c1; /* สีพื้นหลังของเมนู dropdown */
+    min-width: 200px; /* กำหนดความกว้างขั้นต่ำ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+    z-index: 1;
+    border-radius: 5px; /* มุมมน */
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: #ffffff; /* สีข้อความ */
+    padding: 12px 16px; /* ระยะห่าง */
+    text-decoration: none; /* ไม่ให้มีขีดเส้นใต้ */
+    display: block; /* ทำให้ลิงค์แสดงเป็นบล็อก */
+    transition: background-color 0.3s; /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+.dropdown-content a:hover {
+    background-color: #ffb6c1; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* แสดง dropdown เมื่อ hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* แสดงเนื้อหา */
+}
+.product-list-item {
+    display: flex; /* ใช้ flexbox สำหรับจัดระเบียบสินค้า */
+    flex-wrap: wrap; /* เพื่อให้สินค้าเรียงได้หลายแถว */
+    justify-content: center; /* จัดกลาง */
+    padding: 20px; /* ระยะห่างรอบๆ */
+}
+
+.product-item {
+    background-color: #ffffff; /* สีพื้นหลังของสินค้า */
+    border: 1px solid #ddd; /* เส้นขอบ */
+    border-radius: 5px; /* มุมมน */
+    margin: 10px; /* ระยะห่างระหว่างสินค้า */
+    padding: 10px; /* ระยะห่างภายใน */
+    text-align: center; /* จัดกึ่งกลาง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+    transition: transform 0.3s; /* เอฟเฟกต์เมื่อ hover */
+    flex: 1 0 21%; /* กำหนดขนาดสินค้าในแนวนอน */
+    max-width: 300px; /* ความกว้างสูงสุดของสินค้า */
+}
+
+.product-item img {
+    width: 100%; /* ปรับให้ภาพเต็มความกว้าง */
+
+}
+body {
+    font-family: Arial, sans-serif; /* ใช้ฟอนต์พื้นฐาน */
+    background-color: #f8f8f8; /* สีพื้นหลังของหน้า */
+    color: #333; /* สีตัวอักษร */
+    margin: 0; /* ไม่มีระยะห่างด้านนอก */
+    padding: 20px; /* ระยะห่างด้านใน */
+}
+
+h1 {
+    text-align: center; /* จัดกลางหัวเรื่อง */
+}
+
+h3 {
+    text-align: center; /* จัดกลางข้อความ */
+}
+
+.cart-table {
+    width: 100%; /* ความกว้างเต็ม */
+    border-collapse: collapse; /* ร่วมเส้นขอบ */
+    margin: 20px 0; /* ระยะห่างบนล่าง */
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px; /* ระยะห่างในตาราง */
+    text-align: center; /* จัดกลางข้อความในตาราง */
+    border: 1px solid #ddd; /* เส้นขอบของตาราง */
+}
+
+.cart-table th {
+    background-color: #f2f2f2; /* สีพื้นหลังของหัวตาราง */
+}
+
+.product-image1 {
+    width: 50px; /* ความกว้างของรูปภาพ */
+    height: auto; /* ให้ความสูงอัตโนมัติ */
+}
+
+.update-button, .remove-button, .checkout-button {
+    background-color: #ff5770; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีเส้นขอบ */
+    padding: 5px 10px; /* ระยะห่างในปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+    border-radius: 5px; /* มุมมน */
+    transition: background-color 0.3s; /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+.update-button:hover, .remove-button:hover, .checkout-button:hover {
+    background-color: #ff8597; /* สีพื้นหลังเมื่อ hover */
+}
+body {
+    font-family: Arial, sans-serif; /* ใช้ฟอนต์พื้นฐาน */
+    background-color: #f8f8f8; /* สีพื้นหลังของหน้า */
+    color: #333; /* สีตัวอักษร */
+    margin: 0; /* ไม่มีระยะห่างด้านนอก */
+    padding: 20px; /* ระยะห่างด้านใน */
+}
+
+.navbar {
+    background-color: #ffffff; /* สีพื้นหลังของ navbar */
+    padding: 10px 20px; /* ระยะห่างใน navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+.logo img {
+    height: 50px; /* ความสูงของโลโก้ */
+}
+
+.search-bar {
+    display: inline-block; /* แสดงผลในบรรทัดเดียว */
+    margin: 0 20px; /* ระยะห่างซ้ายขวา */
+}
+
+
+
+
+.right-section {
+    display: inline-block; /* แสดงผลในบรรทัดเดียว */
+    float: none; /* จัดให้ชิดขวา */
+}
+
+.right-section a {
+    margin-left: 15px; /* ระยะห่างซ้าย */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+}
+
+.menu {
+    margin: 20px 0; /* ระยะห่างบนล่าง */
+}
+
+.menu a {
+    padding: 10px; /* ระยะห่างในเมนู */
+    display: inline-block; /* แสดงผลในบรรทัดเดียว */
+    color: #333; /* สีตัวอักษร */
+}
+
+.menu .dropdown {
+    display: inline-block; /* แสดงผลในบรรทัดเดียว */
+}
+
+.dropdown .dropbtn {
+    padding: 10px; /* ระยะห่างในปุ่ม dropdown */
+}
+
+.login-container {
+    max-width: 400px; /* ความกว้างสูงสุด */
+    margin: 50px auto; /* จัดกลาง */
+    padding: 20px; /* ระยะห่างด้านใน */
+    background-color: #ffffff; /* สีพื้นหลัง */
+    border-radius: 8px; /* มุมมน */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+.login-container h2 {
+    text-align: center; /* จัดกลางหัวเรื่อง */
+}
+
+.login-container label {
+    display: block; /* แสดง label ในบรรทัดใหม่ */
+    margin-bottom: 5px; /* ระยะห่างด้านล่าง */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%; /* ความกว้างเต็ม */
+    padding: 10px; /* ระยะห่างใน input */
+    border: 1px solid #ccc; /* เส้นขอบ */
+    border-radius: 5px; /* มุมมน */
+    margin-bottom: 15px; /* ระยะห่างด้านล่าง */
+}
+
+.login-actions {
+    text-align: center; /* จัดกลาง */
+}
+
+.login-button {
+    background-color: #ff8597; /* สีพื้นหลังของปุ่ม Login */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีเส้นขอบ */
+    padding: 10px 15px; /* ระยะห่างในปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+    border-radius: 5px; /* มุมมน */
+    transition: background-color 0.3s; /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+.login-button:hover {
+    background-color: #ff8597; /* สีพื้นหลังเมื่อ hover */
+}
+
+.register-link {
+    display: block; /* แสดงในบรรทัดใหม่ */
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    text-align: center; /* จัดกลาง */
+    color: #007bff; /* สีของลิงก์ */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+}
+
+.register-link:hover {
+    text-decoration: underline; /* ขีดเส้นใต้เมื่อ hover */
+}
+body {
+    font-family: Arial, sans-serif; /* ฟอนต์พื้นฐาน */
+    background-color: #f0f0f0; /* สีพื้นหลัง */
+    margin: 0; /* ไม่มีระยะห่างด้านนอก */
+    padding: 0; /* ไม่มีระยะห่างด้านใน */
+}
+
+.navbar {
+    background-color: #ff8597; /* สีนำทาง */
+    color: white; /* สีตัวอักษร */
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    padding: 10px; /* ระยะห่างภายใน */
+}
+
+.logo img {
+    height: 50px; /* ความสูงของโลโก้ */
+}
+
+.search-bar {
+    flex-grow: 1; /* ให้ search-bar ขยายเต็มที่ */
+    display: flex; /* ใช้ flexbox */
+    justify-content: right; /* จัดกลาง */
+}
+
+
+
+
+.right-section {
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+}
+
+.right-section a {
+    color: white; /* สีตัวอักษร */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+    margin-left: 15px; /* ระยะห่างด้านซ้าย */
+}
+
+.menu {
+    background-color: #fcabb7; /* สีพื้นหลังของเมนู */
+    display: flex; /* ใช้ flexbox */
+    padding: 10px; /* ระยะห่างภายใน */
+    margin: 0;
+}
+
+.menu a {
+    color: #ffffff; /* สีตัวอักษร */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+    margin: 0 15px; /* ระยะห่างซ้ายขวา */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* ขีดเส้นใต้เมื่อ hover */
+}
+
+.container {
+    max-width: 600px; /* ความกว้างสูงสุด */
+    margin: 40px auto; /* จัดกลางในแนวนอน */
+    padding: 20px; /* ระยะห่างภายใน */
+    background-color: white; /* สีพื้นหลัง */
+    border-radius: 8px; /* มุมมน */
+    box-shadow: 0 2px 4px rgba(255, 86, 145, 0.1); /* เงา */
+}
+
+.container h1 {
+    text-align: center; /* จัดกลางหัวเรื่อง */
+}
+
+.container label {
+    display: block; /* แสดง label ในบรรทัดใหม่ */
+    margin: 10px 0 5px; /* ระยะห่าง */
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container select {
+    width: 100%; /* ความกว้างเต็ม */
+    padding: 10px; /* ระยะห่างใน input */
+    border: 1px solid #ffd9d9; /* เส้นขอบ */
+    border-radius: 5px; /* มุมมน */
+    margin-bottom: 15px; /* ระยะห่างด้านล่าง */
+}
+
+.register-button {
+    width: 100%; /* ความกว้างเต็ม */
+    padding: 10px; /* ระยะห่างในปุ่ม */
+    background-color: #ff8597; /* สีพื้นหลังของปุ่ม Register */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* มุมมน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+    transition: background-color 0.3s; /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+.register-button:hover {
+    background-color: #ff8597; /* สีพื้นหลังเมื่อ hover */
+}
+
+.signin-link {
+    text-align: center; /* จัดกลาง */
+    margin-top: 15px; /* ระยะห่างด้านบน */
+}
+
+.signin-link a {
+    color: #0000ff; /* สีตัวอักษรของลิงก์ */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+}
+
+.signin-link a:hover {
+    text-decoration: underline; /* ขีดเส้นใต้เมื่อ hover */
+}
+input:focus, select:focus {
+    border-color: #ff71aa; /* เปลี่ยนสีกรอบเป็นสีน้ำเงิน */
+    outline: none; /* ลบเส้นขอบที่เป็นค่าเริ่มต้น */
+    box-shadow: 0 0 5px rgb(229, 94, 172); /* เพิ่มเงาให้กับกรอบ */
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"],
+select {
+    border: 1px solid #ccc; /* สีกรอบเริ่มต้น */
+    padding: 10px; /* ระยะห่างภายใน */
+    border-radius: 4px; /* มุมมน */
+    transition: border-color 0.3s, box-shadow 0.3s; /* เพิ่มการเปลี่ยนแปลงที่เรียบง่าย */
+}
+
+button {
+    color: white; /* สีข้อความในปุ่ม */
+    border: none; /* ลบเส้นขอบ */
+    padding: 10px 20px; /* ระยะขอบภายใน */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    text-decoration: none; /* ลบเส้นใต้ */
+    display: inline-block; /* ทำให้ปุ่มแสดงแบบบล็อก */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    margin: 20px auto; /* ระยะห่างด้านบนและล่าง */
+    border-radius: 5px; /* มุมของปุ่มโค้ง */
+}
+
