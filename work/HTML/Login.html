@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #242322;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(31, 26, 26, 0.1);
+        }
+        h2 {
+            color: rgb(36, 32, 32);
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #bd0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>WebPoRLogin</h2>
+        <form action="/action_page.php">
+            <label for="username">ชื่อผู้ใช้</label>
+            <input type="text" id="username" name="ชื่อผู้ใช้" placeholder="ใส่ชื่อผู้ใช้">
+
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" id="password" name="รหัสผ่าน" placeholder="ใส่รหัสผ่าน">
+
+            <button type="submit">ล็อคอิน</button>
+        </form>
+    </div>
+</body>
+</html>
